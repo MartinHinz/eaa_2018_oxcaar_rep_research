@@ -11,7 +11,6 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-    self_contained: true
 ---
 # Outline
 
@@ -28,7 +27,7 @@ class: inverse, bottom
 
 ## what is Reproducible Research
 
-![Peng 2011, Science 334(6060) pp. 1226-1227](../images/F1.large.jpg)
+![Peng 2011, Science 334(6060) pp. 1226-1227](images/F1.large.jpg)
 .caption.pull-right[Peng 2011, Science 334(6060) pp. 1226-1227]
 
 > 'The goal of reproducible research is to tie specific instructions to data analysis and experimental data so that scholarship can be recreated, better understood and verified.' - Max Kuhn, CRAN Task View: Reproducible Research
@@ -38,7 +37,7 @@ class: inverse, bottom
 ## what is Reproducible Research cont.
 
 <center>
-<img src="../images/journal.pbio.1002506.g001.PNG" style="width: 33%;"/>
+<img src="images/journal.pbio.1002506.g001.PNG" style="width: 33%;"/>
 </center>
 .caption.pull-right[Gorgolewski & Poldrack 2016]
 
@@ -58,7 +57,7 @@ class: inverse, bottom
 | Logically consistent | hopefully | controllable |
 
 ---
-background-image: url(../images/duffy.gif)
+background-image: url(images/duffy.gif)
 background-position: 50% 80%
 
 ## why also Reproducible Research
@@ -108,12 +107,12 @@ Sequence("my_sequence"){
 ### 'eyeballing' simulation
 
 <div class="pull-left">
-<img src="../images/bamforth_grund_fig1.png" style="width: 50%;"/>
+<img src="images/bamforth_grund_fig1.png" style="width: 50%;"/>
 <br/>
 .caption[Bamforth & Grund 2012]
 </div>
 <div class="pull-right">
-<img src="../images/bg_resim.png" style="width: 100%;"/>
+<img src="images/bg_resim.png" style="width: 100%;"/>
 <br/>
 .caption[resimulation with the same parameters, mean of 100 iterations]
 </div>
@@ -140,7 +139,7 @@ Bamforth & Grund 2012: Using two arbitrary simulated results for assuming correl
 > Chúng tôi trang bị GLM theo cấp số nhân với sai số phân bố quasi-Poisson cho SCDPD được xây dựng từ tất cả các ngày 14C từ toàn bộ khu vực nghiên cứu, sử dụng phạm vi ngày rộng hơn từ 4.000-10.000 cal. BP (Hình 2, Bảng bổ sung S1). Mô phỏng SCDPDs (50.000) cho mỗi khu vực nhân khẩu học được tạo ra bằng cách lấy mẫu n ngày tháng theo GLM được trang bị trong đó n là số pha của từng khu vực, sau đó chuyển thành ngày n14C bằng cách lấy mẫu từ sai số đường chuẩn tại lịch tương ứng ngày. Các ngày 14C mô phỏng được làm tròn bằng phương pháp Monte Carlo để cung cấp cùng tỷ lệ các vòng ngày khác nhau như được sử dụng bởi các phòng thí nghiệm 14C, được gán lỗi bằng cách lấy mẫu thay thế từ các lỗi dữ liệu 14C quan sát được, và hiệu chuẩn bằng cách sử dụng quy trình tương tự như dữ liệu. Cuối cùng, các bản phân phối xác suất ngày được hiệu chỉnh mô phỏng được tổng hợp và chuẩn hóa thành sự thống nhất. - Shennan et al. 2013
 
 ---
-background-image: url(../images/316px-Dr._Robert_Goddard_at_Clark_University_-_GPN-2002-000130.jpg)
+background-image: url(images/316px-Dr._Robert_Goddard_at_Clark_University_-_GPN-2002-000130.jpg)
 background-size: cover
 class: inverse, bottom
 
@@ -166,24 +165,24 @@ class: inverse, bottom
 
 #### within R
 * [Bchron](http://cran.rstudio.com/web/packages/Bchron/index.html)
-  * ![Andrew Parnell](../images/parnell.jpeg) Andrew Parnell
+  * ![Andrew Parnell](images/parnell.jpeg) Andrew Parnell
 * [rcarbon](https://cran.r-project.org/web/packages/rcarbon/index.html)
-  * ![Andrew Bevan](../images/bevan.jpeg) Andrew Bevan
+  * ![Andrew Bevan](images/bevan.jpeg) Andrew Bevan
 * [oxcAAR](https://cran.r-project.org/web/packages/oxcAAR/index.html)
-  * ![ISAAK](../images/isaak.png) ISAAK
+  * ![ISAAK](images/isaak.png) ISAAK
 
 ---
 ### Why another calibration package?
 
 *1. Every package produces slightly different results*
 
-<img src="../images/comp_results_packages-1.png" style="width: 50%" class="pull-left">
+<img src="images/comp_results_packages-1.png" style="width: 50%" class="pull-left">
 
-<img src="../images/comp_results_packages_detail-1.png" style="width: 50%" class="pull-right">
+<img src="images/comp_results_packages_detail-1.png" style="width: 50%" class="pull-right">
 
 *2. Sequential Calibration with other tools (currently) not available*
 
-<img src="../images/make_string_for_sequence_calibration-1.png" style="width: 33%">
+<img src="images/make_string_for_sequence_calibration-1.png" style="width: 33%">
 
 ---
 ## why Reproducible Research for 'sum calibration demography'
@@ -381,7 +380,7 @@ class: inverse, bottom
 # Summary
 
 ---
-background-image: url(../images/logos/isaak_with_text.png)
+background-image: url(images/logos/isaak_with_text.png)
 background-position: bottom right
 ## oxCAAR as tool for reproducible 14C based research
 
