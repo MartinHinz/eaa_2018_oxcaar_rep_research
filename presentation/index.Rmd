@@ -381,7 +381,9 @@ class: inverse, bottom
 
 ---
 background-image: url(images/logos/isaak_with_text.png)
-background-position: bottom right
+background-position: 98% 95%
+background-size: 25%
+
 ## oxCAAR as tool for reproducible 14C based research
 
 * brings together the standard calibration tool and a mighty analytical environment
@@ -394,6 +396,14 @@ https://github.com/ISAAKiel/oxcAAR
 
 <br>
 <br>
-<br>
 
 .pull-left[### Thats all, folks!]
+
+
+You find this presentation at:
+
+https://martinhinz.github.io/eaa_2018_oxcaar_rep_research
+
+and the code producing it at
+
+https://github.com/MartinHinz/eaa_2018_oxcaar_rep_research
