@@ -305,7 +305,7 @@ plot(
 )
 ```
 
-&lt;img src="new_presentation_files/figure-html/unnamed-chunk-4-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-4-1.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Features - plotting an individual date
@@ -317,7 +317,7 @@ Plotting an individual date
 oxcalCalibrate( bp=5000, std=20) %&gt;% plot()
 ```
 
-&lt;img src="new_presentation_files/figure-html/unnamed-chunk-5-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-5-1.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Features - plotting multiple dates
@@ -327,7 +327,7 @@ oxcalCalibrate( bp=5000, std=20) %&gt;% plot()
 oxcalCalibrate( bp=c(5000,5200), std=c(20,25)) %&gt;% plot()
 ```
 
-&lt;img src="new_presentation_files/figure-html/unnamed-chunk-6-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-6-1.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Features - plotting on the calibration curve
@@ -337,7 +337,7 @@ oxcalCalibrate( bp=c(5000,5200), std=c(20,25)) %&gt;% plot()
 oxcalCalibrate( bp=c(5000,5200), std=c(20,25)) %&gt;% calcurve_plot()
 ```
 
-&lt;img src="new_presentation_files/figure-html/unnamed-chunk-7-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-7-1.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 class: inverse, bottom
@@ -351,7 +351,7 @@ class: inverse, bottom
 oxcalSimulate(-3400, 25, "SimDate_1") %&gt;% plot()
 ```
 
-&lt;img src="new_presentation_files/figure-html/unnamed-chunk-8-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-8-1.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Features - simulating a sum calibration
@@ -367,7 +367,7 @@ oxcalSumSim(
 ) %&gt;% plot()
 ```
 
-&lt;img src="new_presentation_files/figure-html/unnamed-chunk-9-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-9-1.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 ### A sample (simulated) Dataset:
@@ -386,7 +386,7 @@ my_result_data &lt;- R_Date(names = my_bp_dates$names,
 plot(my_result_data)
 ```
 
-&lt;img src="new_presentation_files/figure-html/unnamed-chunk-11-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-11-1.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 ### Simulating a random envelope
@@ -431,7 +431,7 @@ envelope &lt;- sim_result %&gt;%
 ]
 
 .pull-right[
-&lt;img src="new_presentation_files/figure-html/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
