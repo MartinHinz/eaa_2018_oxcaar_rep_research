@@ -1,0 +1,14 @@
+
+.title-slide {
+  background-image: url(../images/logos/isaak_with_text.png);
+  background-position: left bottom; /* Center the image */
+}
+
+.caption {
+  text-align: right;
+  font-size: .8rem;
+}
+
+.remark-code-line{
+  font-size: 10px;
+}
