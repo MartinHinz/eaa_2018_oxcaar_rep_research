@@ -1,10 +1,11 @@
 ---
 title: "creating reproducible sum calibrations for archaeological demographic assessments"
 subtitle: "the R package oxcAAR"
-author: "Grunert, Nicole - Hinz, Martin - Schmid, Clemens"
+author: "Nicole Grunert - Martin Hinz - Clemens Schmid"
 date: "2016/12/12 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
     css: ["default", "default-fonts", "isaak-theme.css"]
     lib_dir: libs
     nature:
