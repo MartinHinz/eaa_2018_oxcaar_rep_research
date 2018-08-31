@@ -293,9 +293,9 @@ oxcalSumSim(
 ```{r echo=FALSE, message=FALSE, size = 'tiny', out.width = "50%", fig.align = "center"}
 # random sample
 my_bc_dates <- c(
-  sample(6000:5001, 30),
-  sample(5000:4001, 60),
-  sample(4000:3001, 30)
+  sample(6000:5001, 30, replace = T),
+  sample(5000:4001, 60, replace = T),
+  sample(4000:3001, 30, replace = T)
 )
 
 # back calibration
@@ -311,7 +311,7 @@ calf <- function(this_bp) {
 
 my_bp_dates <- data.frame(names = 1:length(my_bc_dates),
                           bp = calf(my_bc_dates),
-                          std = sample(c(25,33,50, 100), replace = T, size = length(my_bc_dates)))
+                          std = sample(c(33, 50, 100), replace = T, size = length(my_bc_dates)))
 ```
 
 ```{r message=FALSE, size = 'tiny', out.width = "50%", fig.align = "center"}
@@ -330,7 +330,7 @@ plot(my_result_data)
 .pull-left[
 ```{r message=FALSE, size = 'tiny', out.width = "50%", fig.align = "center"}
 sim_result <- my_bp_dates %>%
-  broom::bootstrap(2) %>%
+  broom::bootstrap(100) %>%
   do(
     oxcalSumSim(
       n = nrow(my_bp_dates),
