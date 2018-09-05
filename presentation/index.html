@@ -15,7 +15,7 @@ class: center, middle, inverse, title-slide
 # creating reproducible sum calibrations for archaeological demographic assessments
 ## the R package oxcAAR
 ### Nicole Grunert - Martin Hinz - Clemens Schmid
-### 2016/12/12 (updated: 2018-08-31)
+### 2018/09/06
 
 ---
 
@@ -361,7 +361,7 @@ oxcalSimulate(-3400, 25, "SimDate_1") %&gt;% plot()
 oxcalSumSim(
   timeframe_begin = -4000, # From when
   timeframe_end = -3000, # To when
-  n = 50, # Number of dates
+  n = 500, # Number of dates
   stds = 35, # Standard deviation of dates (can also be a vector of length n)
   date_distribution = "uniform" # random uniform; alternatively: equidist for equidistant dates
 ) %&gt;% plot()
@@ -404,7 +404,14 @@ sim_result &lt;- my_bp_dates %&gt;%
       date_distribution = "uniform"
     )$raw_probabilities
   )
+```
 
+```
+## Warning: 'broom::bootstrap' is deprecated.
+## See help("Deprecated")
+```
+
+```r
 alpha = .05
 
 envelope &lt;- sim_result %&gt;%
@@ -454,10 +461,8 @@ https://cran.r-project.org/web/packages/oxcAAR/index.html
 https://github.com/ISAAKiel/oxcAAR
 
 &lt;br&gt;
-&lt;br&gt;
 
 .pull-left[### Thats all, folks!]
-
 
 You find this presentation at:
 

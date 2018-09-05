@@ -2,7 +2,7 @@
 title: "creating reproducible sum calibrations for archaeological demographic assessments"
 subtitle: "the R package oxcAAR"
 author: "Nicole Grunert - Martin Hinz - Clemens Schmid"
-date: "2016/12/12 (updated: `r Sys.Date()`)"
+date: "2018/09/06"
 output:
   xaringan::moon_reader:
     chakra: libs/remark-latest.min.js
@@ -281,7 +281,7 @@ oxcalSimulate(-3400, 25, "SimDate_1") %>% plot()
 oxcalSumSim(
   timeframe_begin = -4000, # From when
   timeframe_end = -3000, # To when
-  n = 50, # Number of dates
+  n = 500, # Number of dates
   stds = 35, # Standard deviation of dates (can also be a vector of length n)
   date_distribution = "uniform" # random uniform; alternatively: equidist for equidistant dates
 ) %>% plot()
@@ -396,10 +396,8 @@ https://cran.r-project.org/web/packages/oxcAAR/index.html
 https://github.com/ISAAKiel/oxcAAR
 
 <br>
-<br>
 
 .pull-left[### Thats all, folks!]
-
 
 You find this presentation at:
 
